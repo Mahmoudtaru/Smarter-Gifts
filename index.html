@@ -20,7 +20,7 @@
         }
     </style>
 </head>
-<body class="flex flex-col min-h-screen" style="font-family: 'Cairo', sans-serif;">
+<body class="flex flex-col min-h-screen bg-gray-50" style="font-family: 'Cairo', sans-serif;">
 
     <!-- ======================= -->
     <!--          الهيدر         -->
@@ -32,7 +32,7 @@
                     دليل المساعدين الشخصيين
                 </h1>
                 <p class="mt-1 text-lg text-white/80">
-                    حصرياً لأعضاء كورس <span class="font-semibold">Smarter with AI</span>
+                    حصرياً لأعضاء دبلومة <span class="font-semibold">Smarter with AI</span>
                 </p>
             </div>
         </div>
@@ -41,7 +41,7 @@
     <!-- ======================= -->
     <!--     المحتوى الرئيسي     -->
     <!-- ======================= -->
-    <main class="flex-grow bg-gray-50 text-gray-900">
+    <main class="flex-grow text-gray-900">
         <div class="container mx-auto px-4 py-8 md:py-12">
             
             <!-- --- شريط البحث --- -->
@@ -51,7 +51,7 @@
                         id="search-bar"
                         type="text"
                         placeholder="ابحث عن مساعد..."
-                        class="w-full px-5 py-3 pr-12 rounded-full bg-white text-gray-900 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-600"
+                        class="w-full px-5 py-3 pr-12 rounded-full bg-white text-gray-900 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-teal-600 shadow-sm"
                     />
                     <div class="absolute top-1/2 right-4 transform -translate-y-1/2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-gray-400">
@@ -101,12 +101,12 @@
     <!-- ======================= -->
     <!--          الفوتر         -->
     <!-- ======================= -->
-    <footer class="bg-gradient-to-r from-teal-700 to-cyan-800 py-6 mt-12">
-        <div class="container mx-auto px-4 text-center text-sm flex flex-col gap-1">
-            <p class="text-white/80">
-                مبسوطين إنك في الكورس معانا 💚
+    <footer class="bg-gradient-to-r from-teal-700 to-cyan-800 py-8 mt-12">
+        <div class="container mx-auto px-4 text-center flex flex-col gap-2">
+            <p class="text-white/90 text-lg">
+                مبسوطين إنك في الدبلومة معانا 💚
             </p>
-            <p class="font-semibold text-white/95">
+            <p class="font-bold text-white text-xl">
                 خليك دايمًا Smarter With Ai
             </p>
         </div>
@@ -119,7 +119,7 @@
     <script>
         // --- 0. بيانات المساعدين ---
         const bonusAssistantsData = [
-            { id: "b1", name: "Presentation Mood", description: "مساعد عروض احتrafi يصمم، ينسق، ويولّد عروض متكاملة بأسلوب مهني", chatgpt: "https://chatgpt.com/g/g-68fff06a60e881918be273126a53ce97-presentation-mood", gemini: "https://gemini.google.com/gem/a5583365f87f" },
+            { id: "b1", name: "Presentation Mood", description: "مساعد عروض احترافي يصمم، ينسق، ويولّد عروض متكاملة بأسلوب مهني", chatgpt: "https://chatgpt.com/g/g-68fff06a60e881918be273126a53ce97-presentation-mood", gemini: "https://gemini.google.com/gem/a5583365f87f" },
             { id: "b2", name: "Video Mood", description: "مخرج ذكي شامل يصمم Moodboard وسيناريوهات احترافية لأي أداة فيديو", chatgpt: "https://chatgpt.com/g/g-68ff5eaa948c8191b97b52768811dec8-video-mood", gemini: "https://gemini.google.com/gem/dbd9d2431eca" },
             { id: "b3", name: "Image Mood", description: "شريك بصري ذكي يقترح برومبتات وأماكن تنفيذها بسهولة", chatgpt: "https://chatgpt.com/g/g-68fea03a56dc8191a1a9d28a4fad9fca-image-mood", gemini: "https://gemini.google.com/gem/d17049195aae" },
             { id: "b4", name: "Web/App Mood", description: "مساعد ذكاء اصطناعي لتحويل الأفكار إلى تطبيقات ومواقع متكاملة", chatgpt: "https://chatgpt.com/g/g-68f871de1834819187de2b11bd4af145-web-app-mood", gemini: "https://gemini.google.com/gem/ccc6a7afa824" },
@@ -129,7 +129,10 @@
             { id: "b8", name: "Smarter Dentist with AI", description: "زميل رقمي في طب الأسنان يشرح ويعلّم بالتعاطف والمنطق والدقة", chatgpt: "https://chatgpt.com/g/g-68f198034578819190d5f28d263a206c-smarter-dentist-with-ai", gemini: null },
             { id: "b9", name: "Smarter Mood", description: "مساعد ذكي بيبسط ويلمّ المعلومة بأسلوب د. محمود حرب، بطريقته الخاصة وبمنتهى البساطة", chatgpt: "https://chatgpt.com/g/g-68f0f763bd24819192d82c0187cad244-smarter-mood", gemini: "https://gemini.google.com/gem/2c3c6d25f368" },
             { id: "b10", name: "Infographic Mood", description: "مساعد متخصص في تحويل النصوص إلى انفوجرافيك تفصيلي وجذاب بصرياً", chatgpt: null, gemini: "https://gemini.google.com/gem/22d7d2c55efc" },
-            { id: "b11", name: "Prompt Mood", description: "مساعد متخصص في هندسة الأوامر (Prompts) لتحسين جودة النتائج من الذكاء الاصطناعي.", chatgpt: "https://chatgpt.com/g/g-690a5dc396108191adbb275002d417ed-prompt-mood", gemini: "https://gemini.google.com/gem/12D63r-FZr6mZ3pJvbnoWhQem1oX4jRYc?usp=sharing" }
+            { id: "b11", name: "Prompt Mood", description: "مساعد متخصص في هندسة الأوامر (Prompts) لتحسين جودة النتائج من الذكاء الاصطناعي.", chatgpt: "https://chatgpt.com/g/g-690a5dc396108191adbb275002d417ed-prompt-mood", gemini: "https://gemini.google.com/gem/12D63r-FZr6mZ3pJvbnoWhQem1oX4jRYc?usp=sharing" },
+            { id: "b12", name: "Task Mood", description: "مهندس أتمتة من النخبة؛ يحلل احتياجاتك بدقة، ويبني أوامر مجدولة عميقة وفائقة التفصيل لتعمل ذاتياً وتحقق لك فائدة حقيقية ملموسة.", chatgpt: "https://chatgpt.com/g/g-69d49815de8c8191872e55efcfc62b40-task-mood", gemini: "https://gemini.google.com/gem/1OdU2QxFqklHLbDS_YPkdEsePBNeg8bQJ?usp=sharing" },
+            { id: "b13", name: "Search prompting Mood", description: "مهندس أوامر احترافي يصمم Prompts دقيقة للبحث العميق مع إرشادات التشغيل المثالية لـ Gemini و ChatGPT.", chatgpt: "https://chatgpt.com/g/g-69d48fb4cc6c8191a43c1ad13bb3ec39-search-prompting-mood", gemini: "https://gemini.google.com/gem/1D8Ud75Cpr1PwyTMR6kS9XDqDnQX3BRKm?usp=sharing" },
+            { id: "b14", name: "Deep research Mood", description: "مساعد بحث عميق استراتيجي؛ يفكك الأوامر المعقدة، ينفذ أبحاثاً شاملة، ويصدر تقارير تحليلية دقيقة وموثقة بالكامل.", chatgpt: null, gemini: "https://gemini.google.com/gem/1c1SAvchx_uzgwtYE6olBc9Et-T3mXrlK?usp=sharing" }
         ];
 
         const publicAssistantsData = [
@@ -195,7 +198,7 @@
                 };
 
                 return `
-                    <div class="rounded-2xl shadow-lg p-0.5 bg-gradient-to-br from-teal-500 to-cyan-600 transition-shadow duration-300 hover:shadow-xl">
+                    <div class="rounded-2xl shadow-lg p-0.5 bg-gradient-to-br from-teal-500 to-cyan-600 transition-shadow duration-300 hover:shadow-xl hover:-translate-y-1">
                         <div class="bg-white rounded-[22px] p-8 flex flex-col justify-between h-full">
                             <div>
                                 <h3 class="text-xl font-bold text-gray-900 mb-3">${assistant.name}</h3>
@@ -212,7 +215,7 @@
             // --- دالة إنشاء زر المساعد العام ---
             function createPublicCard(assistant) {
                 return `
-                    <div class="rounded-2xl shadow-lg p-0.5 bg-gradient-to-br from-teal-500 to-cyan-600 transition-shadow duration-300 hover:shadow-xl">
+                    <div class="rounded-2xl shadow-lg p-0.5 bg-gradient-to-br from-teal-500 to-cyan-600 transition-shadow duration-300 hover:shadow-xl hover:-translate-y-1">
                         <div class="bg-white rounded-[22px] p-8 flex flex-col justify-between h-full">
                             <div>
                                 <h3 class="text-xl font-bold text-gray-900 mb-3">${assistant.name}</h3>
